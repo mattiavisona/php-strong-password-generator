@@ -18,9 +18,16 @@
             background-color: beige;
         }
 
-        .btn-primary {
-            text-align: center;
-            padding: 15px 25px;
+        .mb-3 {
+
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-label {
+            text-transform: uppercase;
+            font-weight: bold;
         }
     </style>
 
@@ -30,7 +37,7 @@
         <form action="index.php" method="GET">
 
             <div class="mb-3">
-                <label for="passwordLength" class="form-label">Password Length :</label>
+                <span for="passwordLength" class="form-label">Password Length :</span>
                 <input name="passwordLength" id="passwordLength" type="number" min="4" step="1" placeholder="Length">
 
                 <hr>
